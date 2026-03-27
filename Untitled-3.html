@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Austin Day Spa | Premium Spa & Wellness in Austin, TX</title>
+    <meta name="description" content="Austin Day Spa offers premium spa services in Austin, TX. Relax with massages, facials, body treatments. Visit our tranquil space at 2206 Hidalgo St. Open daily 9am-10pm. Call 512-633-5215.">
+    <meta name="keywords" content="Austin Day Spa, spa Austin, massage Austin, facial Austin, body treatment, relaxation, wellness center Austin">
+    <meta name="author" content="Austin Day Spa">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.austindayspa.com">
+    <meta property="og:title" content="Austin Day Spa | Relax & Rejuvenate in Austin">
+    <meta property="og:description" content="Experience serenity at Austin Day Spa. Premium massages, facials, and body treatments in a beautiful, clean, relaxing space. Book your escape today.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1200&auto=format">
+    <meta property="og:url" content="https://www.austindayspa.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Austin Day Spa | Rejuvenate Your Senses">
+    <meta name="twitter:description" content="Beautiful, clean, and relaxing day spa in Austin. Open daily 9am-10pm. Call now!">
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fefaf5;
+            color: #2c2a29;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, .logo {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header / Nav */
+        .navbar {
+            background: #ffffffea;
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #f0e3d4;
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 16px 24px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .logo a {
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #9b6b43;
+            letter-spacing: -0.3px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #4a3b2f;
+            transition: color 0.2s;
+            font-size: 0.95rem;
+        }
+        .nav-links a:hover, .nav-links a.active {
+            color: #b47c4a;
+        }
+        .btn-call {
+            background: #9b6b43;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 40px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 0.9rem;
+        }
+        .btn-call:hover {
+            background: #7e5334;
+            transform: scale(1.02);
+        }
+        /* Hero */
+        .hero {
+            background: linear-gradient(107deg, #f9efe7 0%, #fff3ea 100%);
+            padding: 60px 0 50px;
+            border-bottom: 1px solid #f4e2d4;
+        }
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 600;
+            color: #5e3a28;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .hero-content p {
+            font-size: 1.1rem;
+            color: #5a4a3c;
+            margin-bottom: 28px;
+            max-width: 500px;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: #9b6b43;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            display: inline-block;
+        }
+        .btn-outline {
+            border: 1px solid #9b6b43;
+            color: #9b6b43;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.2s;
+            background: transparent;
+        }
+        .hero-image {
+            flex: 1;
+            border-radius: 32px;
+            overflow: hidden;
+            box-shadow: 0 20px 30px -12px rgba(0,0,0,0.1);
+        }
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+        /* Section styling */
+        section {
+            padding: 70px 0;
+            border-bottom: 1px solid #f0e2d6;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 48px;
+            color: #5e3a28;
+            position: relative;
+        }
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 70px;
+            height: 3px;
+            background: #dbbd9b;
+            margin: 12px auto 0;
+            border-radius: 4px;
+        }
+        /* Services grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 32px;
+        }
+        .service-card {
+            background: white;
+            padding: 28px 20px;
+            border-radius: 28px;
+            box-shadow: 0 10px 25px -8px rgba(0,0,0,0.05);
+            transition: all 0.25s;
+            text-align: center;
+            border: 1px solid #f7ede4;
+        }
+        .service-card i {
+            font-size: 2.5rem;
+            color: #b47c4a;
+            margin-bottom: 16px;
+        }
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+        .service-card p {
+            color: #6b5a4c;
+            font-size: 0.9rem;
+        }
+        /* Hours & Location */
+        .info-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+        .info-card {
+            background: white;
+            border-radius: 32px;
+            padding: 32px;
+            flex: 1;
+            min-width: 260px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.02);
+            border: 1px solid #f2e4da;
+        }
+        .info-card h3 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            color: #7b563b;
+        }
+        .hours-list {
+            list-style: none;
+        }
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #e9dbcf;
+        }
+        .badge-open {
+            background: #d9e6cf;
+            color: #3e6b2f;
+            padding: 4px 12px;
+            border-radius: 30px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .contact-details {
+            margin: 20px 0;
+        }
+        .contact-details p {
+            margin: 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .action-btn {
+            background: #f4ede7;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 40px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 0.85rem;
+        }
+        /* Reviews */
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .review {
+            background: white;
+            border-radius: 28px;
+            padding: 28px;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+            border: 1px solid #f0e2d6;
+        }
+        .stars {
+            color: #f5b042;
+            margin-bottom: 12px;
+            letter-spacing: 2px;
+        }
+        .review-text {
+            font-style: italic;
+            margin: 16px 0;
+            color: #3a2e26;
+        }
+        /* Photo grid */
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .photo-item {
+            border-radius: 24px;
+            overflow: hidden;
+            height: 220px;
+            box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .photo-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.4s;
+        }
+        .photo-item:hover img {
+            transform: scale(1.03);
+        }
+        /* Update & related */
+        .update-area {
+            background: #fff4ed;
+            border-radius: 36px;
+            padding: 32px;
+            margin-top: 20px;
+        }
+        .related-box {
+            background: white;
+            border-radius: 28px;
+            padding: 28px;
+            margin-top: 30px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.03);
+        }
+        .badge {
+            background: #e7cfbc;
+            display: inline-block;
+            padding: 5px 14px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        /* Map */
+        .map-container {
+            border-radius: 32px;
+            overflow: hidden;
+            margin-top: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+        }
+        iframe {
+            width: 100%;
+            height: 280px;
+            border: 0;
+        }
+        footer {
+            background: #2d241e;
+            color: #d9cdc1;
+            padding: 40px 0;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 14px;
+            }
+            .hero-content h1 {
+                font-size: 2.2rem;
+            }
+            .section-title {
+                font-size: 1.9rem;
+            }
+            .container {
+                padding: 0 20px;
+            }
+        }
+        .suggest-link {
+            font-size: 0.8rem;
+            margin-top: 14px;
+            display: inline-block;
+            color: #9b6b43;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        /* Modal simple */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.6);
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+        .modal-content {
+            background: white;
+            padding: 28px;
+            border-radius: 32px;
+            max-width: 380px;
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo"><a href="#">Austin Day Spa</a></div>
+        <ul class="nav-links">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="tel:+15126335215" class="btn-call"><i class="fas fa-phone-alt"></i> Call Now</a>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <div class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>Serenity & Rejuvenation<br> in the Heart of Austin</h1>
+                <p>The space is beautiful, clean, and so relaxing. Experience award-winning spa treatments in a tranquil escape.</p>
+                <div class="hero-buttons">
+                    <a href="tel:+15126335215" class="btn-primary"><i class="fas fa-calendar-check"></i> Book Now</a>
+                    <a href="#services" class="btn-outline">Explore Services</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=700&auto=format" alt="Relaxing spa treatment room with candles and stones" loading="eager">
+            </div>
+        </div>
+    </div>
+
+    <!-- Overview Section -->
+    <section id="overview">
+        <div class="container">
+            <h2 class="section-title">Overview</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1.2rem; margin-bottom: 20px;">Austin Day Spa is a sanctuary of calm, blending organic elements with expert care. Our mission is to restore your balance through personalized wellness journeys.</p>
+                <p>Nestled in the vibrant east side of Austin at 2206 Hidalgo St, our spa offers a pristine, peaceful atmosphere. From the moment you step in, enjoy the aroma of essential oils, soothing music, and a dedicated team focused on your well-being. <strong>Open daily 9am–10pm</strong> to welcome you into pure relaxation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Signature Services</h2>
+            <div class="services-grid">
+                <div class="service-card"><i class="fas fa-hand-sparkles"></i><h3>Swedish Massage</h3><p>Gentle, flowing strokes to melt away tension. 60/90 min.</p></div>
+                <div class="service-card"><i class="fas fa-fire"></i><h3>Deep Tissue</h3><p>Targeted relief for chronic muscle knots.</p></div>
+                <div class="service-card"><i class="fas fa-leaf"></i><h3>Aromatherapy Facial</h3><p>Customized facial with pure essential oils.</p></div>
+                <div class="service-card"><i class="fas fa-hot-tub"></i><h3>Body Scrub & Wrap</h3><p>Exfoliate + hydrate for silky skin renewal.</p></div>
+                <div class="service-card"><i class="fas fa-hand-peace"></i><h3>Hot Stone Therapy</h3><p>Warm basalt stones + deep relaxation.</p></div>
+                <div class="service-card"><i class="fas fa-spa"></i><h3>Couples Retreat</h3><p>Side-by-side massages in a private suite.</p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours & Location + Call/Save/Share -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Hours & Location</h2>
+            <div class="info-flex">
+                <div class="info-card">
+                    <h3><i class="far fa-clock"></i> Opening Hours</h3>
+                    <ul class="hours-list">
+                        <li><span>Monday</span><span>9:00 AM – 10:00 PM</span></li>
+                        <li><span>Tuesday</span><span>9:00 AM – 10:00 PM</span></li>
+                        <li><span>Wednesday</span><span>9:00 AM – 10:00 PM</span></li>
+                        <li><span>Thursday</span><span>9:00 AM – 10:00 PM</span></li>
+                        <li><span>Friday</span><span>9:00 AM – 10:00 PM</span></li>
+                        <li><span>Saturday</span><span>9:00 AM – 10:00 PM</span></li>
+                        <li><span>Sunday</span><span>9:00 AM – 10:00 PM</span></li>
+                    </ul>
+                    <div class="badge-open" style="margin-top: 12px;"><i class="fas fa-check-circle"></i> Open 7 days a week</div>
+                    <a href="#" id="suggestHoursBtn" class="suggest-link"><i class="far fa-edit"></i> Suggest new hours</a>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                    <p>2206 Hidalgo St, Austin, TX 78702, United States</p>
+                    <p><i class="fas fa-location-dot"></i> Plus code: 776J+FX Austin, Texas</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-phone"></i> <a href="tel:+15126335215" style="color:#9b6b43; text-decoration:none;">+1 512-633-5215</a></p>
+                        <p><i class="fas fa-envelope"></i> hello@austindayspa.com</p>
+                    </div>
+                    <div class="action-buttons">
+                        <button id="callBtn" class="action-btn"><i class="fas fa-phone"></i> Call</button>
+                        <button id="saveBtn" class="action-btn"><i class="fas fa-bookmark"></i> Save</button>
+                        <button id="shareBtn" class="action-btn"><i class="fas fa-share-alt"></i> Share</button>
+                    </div>
+                    <a href="https://maps.google.com/?q=2206+Hidalgo+St,+Austin,+TX+78702" target="_blank" class="btn-outline" style="display:inline-block; margin-top:16px; text-align:center;">Get Directions <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=2206%20Hidalgo%20St%2C%20Austin%2C%20TX%2078702&t=&z=15&ie=UTF8&iwloc=&output=embed" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews">
+        <div class="container">
+            <h2 class="section-title">Client Love</h2>
+            <div class="reviews-grid">
+                <div class="review"><div class="stars">★★★★★</div><p class="review-text">“The space is beautiful, clean, and so relaxing. From the warm welcome to the skilled massage — absolute perfection.”</p><p><strong>— Sarah M.</strong></p></div>
+                <div class="review"><div class="stars">★★★★★</div><p class="review-text">“Best day spa in Austin! The staff is incredibly friendly and professional. My facial left my skin glowing.”</p><p><strong>— David R.</strong></p></div>
+                <div class="review"><div class="stars">★★★★★</div><p class="review-text">“Amazing ambiance and top-tier service. The hot stone massage melted my stress away. Highly recommend!”</p><p><strong>— Jessica L.</strong></p></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photos Gallery -->
+    <section id="photos">
+        <div class="container">
+            <h2 class="section-title">Serenity in Frames</h2>
+            <div class="photo-grid">
+                <div class="photo-item"><img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=500&auto=format" alt="Peaceful spa interior with candles" loading="lazy"></div>
+                <div class="photo-item"><img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=500&auto=format" alt="massage therapy room with herbal elements" loading="lazy"></div>
+                <div class="photo-item"><img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?w=500&auto=format" alt="luxurious pedicure area with flowers" loading="lazy"></div>
+                <div class="photo-item"><img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=500&auto=format" alt="relaxation lounge with organic design" loading="lazy"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Update + Related to your search -->
+    <section>
+        <div class="container">
+            <div class="update-area">
+                <div class="badge"><i class="fas fa-sync-alt"></i> Update</div>
+                <h3 style="font-size: 1.7rem; margin-bottom: 12px;">Now open extended hours 🌿</h3>
+                <p>We’re thrilled to announce that Austin Day Spa is open daily from <strong>9 AM – 10 PM</strong>. Enjoy evening relaxation after work! New seasonal body treatments just added — book your escape now.</p>
+                <p style="margin-top: 10px;"><i class="fas fa-gift"></i> Holiday gift cards available in-spa or online.</p>
+            </div>
+            <div class="related-box">
+                <div class="badge"><i class="fas fa-search"></i> Related to your search</div>
+                <div style="display: flex; flex-wrap: wrap; gap: 24px; justify-content: space-between;">
+                    <div><i class="fas fa-hand-holding-heart"></i> <strong>Couples massage packages</strong><br>Romantic side-by-side rituals</div>
+                    <div><i class="fas fa-apple-alt"></i> <strong>Wellness add-ons</strong><br>CBD oil, scalp massage, cupping</div>
+                    <div><i class="fas fa-calendar-week"></i> <strong>Membership program</strong><br>Save 15% on monthly treatments</div>
+                    <div><i class="fas fa-water"></i> <strong>Nearby: Zilker Park & South Congress</strong><br>Combine spa with Austin adventure</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2025 Austin Day Spa — Rejuvenate Your Soul</p>
+        <p style="margin-top: 12px; font-size: 0.85rem;">2206 Hidalgo St, Austin, TX 78702 | +1 512-633-5215</p>
+        <p style="margin-top: 8px;"><i class="fas fa-clock"></i> Daily 9:00 AM – 10:00 PM</p>
+    </div>
+</footer>
+
+<!-- Suggest Hours Modal -->
+<div id="hourModal" class="modal">
+    <div class="modal-content">
+        <h3>Suggest new hours</h3>
+        <p>We’d love your feedback! Send your suggestion to our team.</p>
+        <input type="text" id="suggestionInput" placeholder="e.g., Open until 11pm weekends" style="width:100%; padding:10px; margin:16px 0; border-radius: 40px; border:1px solid #ddd;">
+        <button id="sendSuggestion" style="background:#9b6b43; color:white; border:none; padding:10px; border-radius:40px; width:100%;">Send Suggestion</button>
+        <button id="closeModal" style="margin-top:12px; background:transparent; border:none; cursor:pointer;">Cancel</button>
+    </div>
+</div>
+
+<script>
+    // Call, Save, Share interactions
+    const callBtn = document.getElementById('callBtn');
+    const saveBtn = document.getElementById('saveBtn');
+    const shareBtn = document.getElementById('shareBtn');
+    if(callBtn) callBtn.addEventListener('click', () => window.location.href = 'tel:+15126335215');
+    if(saveBtn) saveBtn.addEventListener('click', () => {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText("Austin Day Spa | 2206 Hidalgo St, Austin, TX 78702 | 512-633-5215");
+            alert("Business info copied to clipboard. You can save it in your notes!");
+        } else {
+            alert("Press Ctrl+D to bookmark this page, or save our info: 512-633-5215");
+        }
+    });
+    if(shareBtn && navigator.share) {
+        shareBtn.addEventListener('click', () => {
+            navigator.share({
+                title: 'Austin Day Spa',
+                text: 'Relaxing spa in Austin, open daily 9am-10pm. Check them out!',
+                url: window.location.href,
+            }).catch(() => alert('Sharing not supported, but you can share our phone: 512-633-5215'));
+        });
+    } else if(shareBtn) {
+        shareBtn.addEventListener('click', () => alert('Share this page URL or contact: +1 512-633-5215'));
+    }
+
+    // Suggest new hours modal
+    const modal = document.getElementById('hourModal');
+    const suggestBtn = document.getElementById('suggestHoursBtn');
+    const closeModalBtn = document.getElementById('closeModal');
+    const sendSugg = document.getElementById('sendSuggestion');
+    if(suggestBtn) {
+        suggestBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.style.display = 'flex';
+        });
+    }
+    if(closeModalBtn) closeModalBtn.addEventListener('click', () => modal.style.display = 'none');
+    if(sendSugg) {
+        sendSugg.addEventListener('click', () => {
+            const suggestion = document.getElementById('suggestionInput').value;
+            if(suggestion.trim()) {
+                alert(`Thank you! Your suggestion: "${suggestion}" has been sent to our management.`);
+                modal.style.display = 'none';
+                document.getElementById('suggestionInput').value = '';
+            } else {
+                alert('Please enter a suggestion before sending.');
+            }
+        });
+    }
+    window.addEventListener('click', (e) => { if(e.target === modal) modal.style.display = 'none'; });
+
+    // Smooth scroll and active nav highlight
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-links a');
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            if(pageYOffset >= sectionTop) current = section.getAttribute('id');
+        });
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if(link.getAttribute('href') === `#${current}`) link.classList.add('active');
+        });
+    });
+</script>
+
+<!-- JSON-LD Structured Data for Local Business -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "DaySpa",
+  "name": "Austin Day Spa",
+  "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=800&auto=format",
+  "description": "Premium day spa in Austin offering massages, facials, body treatments. Beautiful, clean, and relaxing space open daily 9am-10pm.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "2206 Hidalgo St",
+    "addressLocality": "Austin",
+    "addressRegion": "TX",
+    "postalCode": "78702",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 30.2643,
+    "longitude": -97.7124
+  },
+  "url": "https://www.austindayspa.com",
+  "telephone": "+15126335215",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "09:00",
+      "closes": "22:00"
+    }
+  ],
+  "priceRange": "$$",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "128"
+  },
+  "sameAs": ["https://www.instagram.com/austindayspa","https://www.facebook.com/austindayspa"]
+}
+</script>
+</body>
+</html>
